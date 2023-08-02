@@ -21,12 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2738FACD5B054E0C9F295651 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CBD2CAE1FFB4A1C82CB0B82;
-			remoteInfo = OneSignalNotificationServiceExtension;
+		D9444675A38147FB84FE5150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CBD2CAE1FFB4A1C82CB0B82 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 2738FACD5B054E0C9F295651 /* PBXContainerItemProxy */;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -133,6 +131,7 @@
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
 				DC32710334D24657BA658976 /* OneSignalNotificationServiceExtension */,
+				D44820A10ED94A278B609853 /* OneSignalNotificationServiceExtension */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -173,6 +172,7 @@
 				DC32710334D24657BA658976 /* OneSignalNotificationServiceExtension */,
 				4E0AF6C22BA6EE2D51488677 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
 				631C7DF081EB61D865681226 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				D44820A10ED94A278B609853 /* OneSignalNotificationServiceExtension */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -186,6 +186,18 @@
 			sourceTree = "<group>";
 		};
 		DC32710334D24657BA658976 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				48FDC91351C84CF29568D43B /* NotificationService.h */,
+				2478A2A5C12244AA83419E01 /* OneSignalNotificationServiceExtension.entitlements */,
+				A82A13A8BD8F48299B8ED49A /* OneSignalNotificationServiceExtension-Info.plist */,
+				C3D65E880B2643BE92C5FB9E /* NotificationService.m */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		D44820A10ED94A278B609853 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
 				48FDC91351C84CF29568D43B /* NotificationService.h */,
@@ -480,7 +492,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduardoarad.igniteshoes;
-				PRODUCT_NAME = igniteshoesapp;
+				PRODUCT_NAME = "igniteshoesapp";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,7 +518,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eduardoarad.igniteshoes;
-				PRODUCT_NAME = igniteshoesapp;
+				PRODUCT_NAME = "igniteshoesapp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
